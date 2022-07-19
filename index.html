@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&family=Ma+Shan+Zheng&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Etch-a-Sketch!</title>
+</head>
+<body>
+    <div class="main">
+        <div class="settings">
+            <div class="colours">
+                <div class="colours-title">Colours</div>
+                <!-- <div class="line"></div> -->
+                <div class="colours-settings">
+                    <input id="colour-selector" type="color">
+                    <button class="custom-button">Custom</button>
+                    <button class="custom-button">Black</button>
+                    <button class="custom-button">Rainbow</button>
+                    <button class="custom-button">Clear</button>
+                </div>
+            </div>
+
+            <div class="size-adjustment"> 
+                <div class="colours-title">Size</div>
+                <!-- <div class="line"></div> -->
+                <div class="size-number">60</div>
+                <input type="range" min="40" max="80" value="60" class="slider" id="myRange">
+            </div>
+        </div>
+
+        <div class="sketch">
+            <div class="sketch-title">Etch-a-Sketch!</div>
+            <div class="squares"></div>
+        </div>
+    </div>
+</body>
+</html>

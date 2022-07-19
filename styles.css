@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-size: calc(0.2rem + 1vw);
+}
+
+body {
+    background-color: #c7edd5;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 30%;
+}
+
+.colours {
+    background-color: #e2d8eb;
+    border-radius: 25px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 30%;
+}
+
+.colours-title {
+    text-align: center;
+    font-family: 'Edu QLD Beginner', cursive;
+    font-size: 1.75rem;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.colours-settings {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    min-height: 150px;
+}
+
+#colour-selector {
+    width: 100%;
+}
+
+.custom-button {
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin: 3px;
+}
+
+.custom-button:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.size-number {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 4rem;
+    margin-left: -25px;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; 
+    background: #04AA6D;
+    cursor: pointer;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    cursor: pointer;
+  }
+
+.size-adjustment {
+    background-color: #e2d8eb;
+    border-radius: 25px;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.sketch {
+    background-color: #e2d8eb;
+    width: 90vmin;
+    height: 90vmin;
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sketch-title {
+    font-family: 'Ma Shan Zheng', cursive;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.squares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 80%;
+    aspect-ratio: 1/1;
+}
+
+.square {
+    background-color: white;
+    border: thin solid #000000;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 913px) {
+    .settings {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .main {
+        flex-direction: column;
+    }
+
+    .colours-settings {
+        min-width: none;
+    }
+
+    .sketch {
+        height: 70vmin;
+        width: 70vmin;
+    }
+
+    .sketch-title {
+        font-size: 3rem;
+    }
+
+    .squares {
+        height: 100%;
+    }
+
+    .colours, .size-adjustment {
+        padding: 10px 15px;
+        width: 50%;
+    }
+
+    .size-number {
+        margin-left: -10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .button-54 {
+      padding: 0.25em 0.75em;
+    }
+  }
