@@ -176,6 +176,10 @@ body {
     border: thin solid #000000;
 }
 
+.square:hover {
+    background-color: black;
+}
+
 .row {
     display: flex;
     flex-direction: column;
