@@ -1,3 +1,7 @@
+:root {
+    --hoverColor: #000000;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -177,7 +181,7 @@ body {
 }
 
 .square:hover {
-    background-color: black;
+    background-color: var(--hoverColor);
 }
 
 .row {
